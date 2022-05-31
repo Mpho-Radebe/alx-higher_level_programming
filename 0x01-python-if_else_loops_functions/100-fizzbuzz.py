@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 
 for ch in range(ord('z'), ord('a') - 1, -1):
-    print(f"{chr(ch) if ch % 2 == 0 else chr(ch - 32)}", end="")
+    if ch % 2 == 1:
+        ch -= 32
+    print("{}".format(chr(ch)), end="")
