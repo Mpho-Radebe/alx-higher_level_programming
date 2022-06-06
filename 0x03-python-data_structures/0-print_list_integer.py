@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print("{}".format(23))
+def print_list_integer(my_list=[]):
+    for elem in my_list:
+        print("{}".format(elem))
