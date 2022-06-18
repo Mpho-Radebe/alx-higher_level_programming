@@ -28,25 +28,14 @@ int check_cycle(listint_t *list)
 {
 	listint_t *cursor;
 	listint_t *curr = list;
-	/*listint_t *visited = NULL;*/
+	listint_t *visited = NULL;
 	
 	while (curr != NULL)
 	{
-		/*
 		if (find_in_list(visited, (unsigned long)curr) == 1)
 			return (1);
 		add_nodeint(&visited, (unsigned long)curr);
 		curr = curr->next
-		*/
-		cursor = curr->next;
-		while (cursor != NULL)
-		{
-			if (curr == cursor)
-				return (1);
-			cursor = cursor->next;
-		}
-		curr = curr->next;
-			
 	}
 	return (0);
 }
