@@ -2,7 +2,7 @@
 
 /**
  * find_in_list - searches for an item in the list
- * @list - the list
+ * @list: the list
  * @n: the search item
  * Return: 1 if search item found and 0 otherwise
  */
@@ -16,7 +16,7 @@ int find_in_list(listint_t *list, int n)
 			return (1);
 		curr = curr->next;
 	}
-	return (0);	
+	return (0);
 }
 
 /**
@@ -26,16 +26,15 @@ int find_in_list(listint_t *list, int n)
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *cursor;
 	listint_t *curr = list;
 	listint_t *visited = NULL;
-	
+
 	while (curr != NULL)
 	{
 		if (find_in_list(visited, (unsigned long)curr) == 1)
 			return (1);
 		add_nodeint(&visited, (unsigned long)curr);
-		curr = curr->next
+		curr = curr->next;
 	}
 	return (0);
 }
