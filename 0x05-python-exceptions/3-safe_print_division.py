@@ -6,9 +6,10 @@ def safe_print_division(a, b):
     except ZeroDivisionError:
         pass
     finally:
+        print("Inside result: ")
         if div == None:
             print("None")
-        else
+        else:
             print("{}".format(div))
         return div
 
