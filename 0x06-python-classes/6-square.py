@@ -6,12 +6,8 @@ class Square:
 
     """The Square class"""
     def __init__(self, size=0, position=(0, 0)):
-        """Sets the size of a square to the specified size"""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        """Sets the size of a square to the specified size"""     
+        self.size = size
         self.position = position
 
     @property
