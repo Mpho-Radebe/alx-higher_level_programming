@@ -38,4 +38,3 @@ class Square:
         else:
             for i in range(self.size):
                 print ("#" * self.size)
-Square(5).my_print()
