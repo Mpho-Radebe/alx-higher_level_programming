@@ -54,3 +54,20 @@ class Square:
             for i in range(self.size):
                 print(" " * self.position[0], end="")
                 print("#" * self.size)
+
+    def __str__(self):
+        """Returns a string a of this square"""
+        str_rep = ""
+        if self.size == 0:
+            str_rep += "\n"
+        else:
+            for i in range(self.position[1]):
+                str_rep += "\n"
+            for i in range(self.size):
+                str_rep += " " * self.position[0]
+                str_rep += "#" * self.size + "\n"
+        return str_rep
+
+    def __repr__(self):
+        """Returns a string of this square"""
+        return str(self)
