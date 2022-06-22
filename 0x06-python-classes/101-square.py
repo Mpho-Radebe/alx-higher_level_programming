@@ -57,8 +57,10 @@ class Square:
 
     def __str__(self):
         """Returns a string a of this square"""
-       self.my_print()
+        self.my_print()
+        return ""
 
     def __repr__(self):
         """Returns a string of this square"""
         self.my_print()
+        return ""
