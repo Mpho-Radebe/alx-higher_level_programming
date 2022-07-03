@@ -56,7 +56,7 @@ class Rectangle:
         """ A string presenation of the rectangle"""
         if self.height == 0 or self.width == 0:
             return ""
-        return "\n".join([(str(print_symbol) * self.width) for i in range(self.height)])
+        return "\n".join([(str(Rectangle.print_symbol) * self.width) for i in range(self.height)])
 
     def print(self):
         """Prints the string presentation of the rectangle"""
